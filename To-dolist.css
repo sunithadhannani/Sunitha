@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 16px;
+}
+form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+form button:hover {
+    background: #555;
+}
+.task-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.task-container .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e7ff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.task-container .task h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.task-container .task p {
+    margin: 0;
+    color: #555;
+}
+
+.task-container .task button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-container .task button.edit {
+    background: #5bc0de;
+}
+
+.task-container .task button:hover {
+    opacity: 0.9;
+}
