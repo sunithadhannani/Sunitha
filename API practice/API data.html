@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Practice</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Users Data from API</h1>
+
+    <!-- JSON Response Section -->
+    <h2>JSON Data:</h2>
+    <pre id="json-data"></pre>
+
+    <!-- Table for Displaying API Data -->
+    <h2>Tabular Data:</h2>
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="API data.js"></script>
+
+</body>
+</html>
