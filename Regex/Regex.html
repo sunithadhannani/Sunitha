@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registerForm">
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <div class="error" id="emailError"></div>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter 10-digit phone number">
+            <div class="error" id="phoneError"></div>
+
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter a strong password">
+            <div class="error" id="passwordError"></div>
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob">
+            <div class="error" id="dobError"></div>
+            <p>Your Age: <span id="age"></span></p>
+
+            <label>Aadhar Number:</label>
+            <input type="text" id="aadhar" placeholder="Enter 12-digit Aadhar">
+            <div class="error" id="aadharError"></div>
+
+            <label>PAN Card Number:</label>
+            <input type="text" id="pan" placeholder="Enter PAN (ABCDE1234F)">
+            <div class="error" id="panError"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="Regex.js"></script>
+
+</body>
+</html>
