@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Admin Panel</h2>
+     
+    <button id="logoutBtn" class="logout-button">Logout</button>
+
+    <div class="product-form">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="Price">
+        <input type="text" id="productDescription" placeholder="Description">
+        <input type="number" id="productQuantity" placeholder="Quantity">
+        
+        <!-- Updated: File input for image -->
+        <input type="file" id="productImage" accept="image/*">  
+
+        <button id="addProductBtn">Add Product</button>
+    </div>
+
+    <h3>Product List</h3>
+    <div id="productList"></div>
+
+    <script type="module" src="admin.js"></script>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

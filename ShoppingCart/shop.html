@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to ShoppingCart!</h1>
+    <button id="logoutBtn" class="logout-button">Logout</button>
+    <div class="container">
+        <!-- ✅ Product List Section -->
+        <div class="products">
+            <h2>Available Products</h2>
+            <div id="productList"></div>
+        </div>
+
+        
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cartList">🛒 Cart is empty.</div>
+            <button id="checkoutBtn">💳 Checkout</button>
+        </div>
+    </div>
+
+    <!-- ✅ Import JavaScript -->
+    <script type="module" src="shop.js"></script>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
